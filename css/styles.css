@@ -142,6 +142,7 @@ a {
 	color: var(--text-color-iris);
 }
 /* -------------------frame under the header------------------- */
+.header-main,
 .header-portf {
 	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -308,19 +309,15 @@ a {
 	height: 40px;
 	border-radius: 50%;
 	background-color: var(--text-color-iris);
+	outline: var(--primery-text-color-slate);
 }
 .sotial-list-icon {
 	fill: var(--text-color-cloud);
 }
 .sotial-list-link:hover,
 .sotial-list-link:focus {
-	background-color: var(--text-color-cloud);
+	background-color: var(--color-green);
 }
-.sotial-list-link:hover .sotial-list-icon,
-.sotial-list-link:focus .sotial-list-icon {
-	fill: var(--text-color-iris);
-}
-/* section-сustomers */
 .customers {
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -343,25 +340,26 @@ a {
 	justify-content: center;
 	width: 168px;
 	height: 88px;
-	border: 1px solid var(--color-light-slate);
-	border-radius: 4px;
+	color: var(--color-light-slate);
 	cursor: pointer;
 }
 .customers-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--color-light-slate);
+	border-radius: 4px;
+	outline: var(--text-color-iris);
+}	
 .customers-svg {
-	fill: var(--color-light-slate);
+	fill: currentColor;
 }
-.customers-li:hover,
-.customers-li:focus {
+.customers-link:hover,
+.customers-link:focus {
 	border: 1px solid var(--text-color-iris);
-}
-.customers-li:hover .customers-svg,
-.customers-li:focus .customers-svg {
-	fill: var(--text-color-iris);
+	color: var(--text-color-iris);
 }
 /* -------------------Portfolio------------------- */
 .section-portfolio {
@@ -441,6 +439,7 @@ a {
 }
 .footer > .container {
 	display: flex;
+	align-items: baseline;
 }
 .logo-cloud {
 	color: var(--text-color-cloud);
@@ -468,8 +467,6 @@ a {
 .footer-ul {
 	display: flex;
 	align-items: center;
-	/* justify-content: center;
-	column-gap: 16px; */
 	justify-content: space-between;
 	width: 208px;
 	height: 40px;
@@ -484,6 +481,7 @@ a {
 	height: 40px;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
+	outline: var(--primery-text-color-slate);
 }
 .footer-svg {
 	fill: var(--text-color-cloud);
